@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Slider with Flip Animation and Full-Screen Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Image -->
+    <div class="bgImage"></div>
+    <img src="assets/images/diver3.gif" id="diver" alt="Diver">
+
+    <!-- Full-Screen Header with Video Background -->
+    <header id="header">
+    
+        <video autoplay muted loop id="video-bg">
+            <source src="assets/images/newFinal.mp4" type="video/mp4">
+        </video>
+        
+    </header>
+
+    <!-- 3D Slider Section -->
+    <div class="banner">
+        <div class="slider" style="--quantity: 5">
+            <div class="item front-center sea" style="--position: 0" data-flip="assets/images/Flip1.jpeg">
+                <img src="assets/images/Sea_ani1.jpeg" alt="Sea Animation 1">
+            </div>
+            <div class="item sea" style="--position: 1" data-flip="assets/images/Flip2.jpeg">
+                <img src="assets/images/Sea_ani2.jpeg" alt="Sea Animation 2">
+            </div>
+            <div class="item sea" style="--position: 2" data-flip="assets/images/Flip3.jpeg">
+                <img src="assets/images/Sea_ani3.jpeg" alt="Sea Animation 3">
+            </div>
+            <div class="item sea" style="--position: 3" data-flip="assets/images/Flip4.jpeg" onclick="window.location.href='product/index2.html'">
+                <img src="assets/images/Sea_ani4.jpeg" alt="Sea Animation 4">
+            </div>
+            <div class="item sea" style="--position: 4" data-flip="assets/images/Flip5.jpeg">
+                <img src="assets/images/Sea_ani5.jpeg" alt="Sea Animation 5">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="video-popup-container" class="video-popup-hidden">
+        <div id="video-popup-content">
+            <div id="video-popup-close">&times;</div>
+            <video id="popup-video" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <audio id="door-sound">
+        <source src="assets/images/sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Door Section (if needed) -->
+    <div id="door"></div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>

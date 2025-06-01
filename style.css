@@ -1,0 +1,264 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, button {
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image */
+.bgImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg.vidmp4') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Banner Container */
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+/* Force video to cover screen */
+/* #video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ensure slider starts hidden */
+/* .slider {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 1s ease-in-out;
+} */ 
+.slider {
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Ensure it's not visible */
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out; /* Smooth fade-in effect */
+}
+/* 3D Slider */
+.slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 40s linear infinite;
+    z-index: 2;
+    transform-origin: center;
+}
+
+/* Auto Rotation Animation */
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+/* Positioning Images in the Carousel */
+.slider .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(calc(var(--position) * (360deg / var(--quantity)))) translateZ(400px);
+}
+
+/* Styling for Images */
+.slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Content Section */
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    text-align: center;
+    z-index: 3;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Title */
+.content h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+/* Author Section */
+.author {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Fade In and Out Effects (Fix for Flip) */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1023px) {
+    .slider {
+        width: 160px;
+        height: 200px;
+    }
+    .slider .item {
+        transform: rotateY(calc(var(--position) * (360deg / var(--quantity)))) translateZ(250px);
+    }
+    .content h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider {
+        width: 120px;
+        height: 150px;
+    }
+    .slider .item {
+        transform: rotateY(calc(var(--position) * (360deg / var(--quantity)))) translateZ(200px);
+    }
+    .content h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Video Background */
+#video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Door Section */
+#door {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/images/newDoor3.png');
+    background-size: cover;
+    background-position: center;
+    transform-origin: center left; /* Door opens from the left edge */
+    transition: transform 5s ease-in-out; /* Smooth 5s opening */
+    z-index: 10;
+}
+
+/* Door Opening Effect - Rotates Inward Slowly */
+#door.open {
+    transform: perspective(1500px) rotateY(100deg); /* Opens like a real door */
+}
+/* Diver Styles */
+/* Diver Styles */
+#diver {
+    position: absolute;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    top: -100px; /* Start above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out, top 2s ease-in-out;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+/* Diver Animation - Diving into the Sea */
+#diver.dive {
+    top: 20%; /* Adjust final position as needed */
+    opacity: 1;
+}
+
+/* Diver Animation - Moving to Flip Card */
+#diver.move {
+    transition: left 1s ease-in-out, top 1s ease-in-out;
+}
+
+/* Video Popup Styles */
+#video-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.video-popup-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.video-popup-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#video-popup-content {
+    width: 75%; /* Covers more than half the screen */
+    position: relative;
+    max-height: 80vh;
+}
+
+#popup-video {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    display: block;
+    border-radius: 8px;
+}
+
+#video-popup-close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 21;
+}

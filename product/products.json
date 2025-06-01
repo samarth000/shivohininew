@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name":" Document-based Customer Support",
+        "price": 200,
+        "image": "img/1.png",
+        "description": "● Need: Quick and accurate responses to customer queries using existing documentation ● Industry: Customer Service, IT, Telecom, Retail ● Applications: Chatbots, Virtual Assistants, Knowledge Base Q&A"
+    },
+    {
+        "id": 2,
+        "name":" Compliance and Regulatory Assistant",
+        "price": 250,
+        "image": "img/2.png",
+        "description": "● Need: Easy retrieval and summarization of compliance and regulatory documents. ● Industry: Finance, Healthcare, Legal ● Applications: Compliance management, Automated audits, Legal advice bots"
+    },
+    {
+        "id": 3,
+        "name":" Medical Knowledge Base Retrieval",
+        "price": 290,
+        "image": "img/3.png",
+        "description": "● Need: Quick referencing of medical literature for diagnosis assistance. ● Industry: Healthcare, Pharmaceuticals ● Applications: Diagnostic support, Clinical decision systems, Medical research assistance"
+    },
+    {
+        "id": 4,
+        "name":" Technical Documentation Assistant",
+        "price": 200,
+        "image": "img/4.png",
+        "description": "● Need: Efficient retrieval of technical documentation and troubleshooting guides. ● Industry: Engineering, Software Development, Manufacturing ● Applications: Internal IT support, User guides, Technical troubleshooting bots"
+    },
+    {
+        "id": 5,
+        "name":" Academic Research Assistant",
+        "price": 300,
+        "image": "img/5.png",
+        "description": "● Need: Efficient summarization and retrieval of research papers.● Industry: Education, Research Institutions ● Applications: Research paper synthesis, Literature review automation, Thesis assistance"
+    },
+    {
+        "id": 6,
+        "name":" Legal Case Retrieval Assistant",
+        "price": 200,
+        "image": "img/6.png",
+        "description": "● Need: Fast and reliable referencing of legal precedents and documents. ● Industry: Legal, Corporate Law ● Applications: Case research, Legal briefs preparation, Automated legal support"
+    },
+    {
+        "id": 7,
+        "name":" Product Information Retrieval System",
+        "price": 200,
+        "image": "img/7.png",
+        "description": "● Need: Quick access to detailed product information for customers or internal teams. ● Industry: Retail, E-commerce, Manufacturing ● Applications: Product support chatbots, Customer self-service, Internal sales training."
+    },
+    {
+        "id": 8,
+        "name":" Real-Time Market Intelligence Assistant",
+        "price": 200,
+        "image": "img/8.png",
+        "description": "● Need: Timely retrieval and summarization of market intelligence and news articles. ● Industry: Finance, Investment Firms, Market Research ● Applications: Investment decisions, Financial market updates, Competitive intelligence"
+    },
+    {
+        "id": 9,
+        "name":" Voice-Based AI Assistant",
+        "price": 200,
+        "image": "img/9.png",
+        "description": "Control your world with just your voice—our AI assistant understands, responds, and automates tasks effortlessly, making life simpler and smarter."
+    },
+    {
+        "id": 10,
+        "name":" Interactive Websites",
+        "price": 200,
+        "image": "img/10.png",
+        "description": "Turn visitors into customers with dynamic, engaging websites that adapt in real-time, offering personalized experiences that boost conversions."
+    },
+    {
+        "id": 11,
+        "name":" Interactive Applications",
+        "price": 200,
+        "image": "img/11.png",
+        "description": "Revolutionize user engagement with AI-powered apps that learn, predict, and respond to user behavior, creating seamless and immersive experiences."
+    },
+    {
+        "id": 12,
+        "name":" AI Agents",
+        "price": 200,
+        "image": "img/12.png",
+        "description": "● Supercharge your business with autonomous AI agents that handle tasks, analyze data, and make decisions—so you don’t have to."
+    },
+    {
+        "id": 13,
+        "name":" Customized Drones",
+        "price": 200,
+        "image": "img/13.png",
+        "description": "From aerial photography to industrial inspections, our AI-driven drones are tailored to your needs, delivering precision and performance like never before."
+    },
+    {
+        "id": 14,
+        "name":" Face Recognition",
+        "price": 200,
+        "image": "img/14.png",
+        "description": "From aerial photography to industrial inspections, our AI-driven drones are tailored to your needs, delivering precision and performance like never before."
+    }
+
+]
